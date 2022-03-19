@@ -1,0 +1,93 @@
+/* classes gerais para toda a página */
+.iconRedes{
+    color: white;
+    margin-left: 3%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* remove o scroll lateral */
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-image: url(analytics-ge854c85eb_1920.jpg);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+
+@media (max-width: 576px) {   
+
+header{
+background-position-x: center;
+height: 300px;
+}
+
+.navHeader{
+    background-color: black;
+    height: 50px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.meuResumo{
+    text-align: justify;
+}
+
+main{
+margin-top: 260px;
+}
+
+.imgproject{
+    width: 100%;
+    border-radius: 5%;
+}
+
+section{
+    color: rgba(201, 201, 201, 0);
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, 
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.pSection{
+    text-align: justify;
+    margin-left: 5%;
+    width: 90%;
+}
+
+/* esta classe faz com que sections com menos texto fiquem do tamanho correto */
+.comprimentoSections{
+    height: 100%;
+}
+
+.comprimentoSection2{
+    height: 100%;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.pFooter{
+    text-align: center;
+    font-size: medium;
+}
+
+
+}
