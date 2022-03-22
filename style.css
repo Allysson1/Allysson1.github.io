@@ -1,93 +1,288 @@
 /* classes gerais para toda a página */
-.iconRedes{
+.iconRedes {
     color: white;
     margin-left: 3%;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
-    
+
 }
 
 /* remove o scroll lateral */
-body{
+body {
     overflow-x: hidden;
 }
 
-header{
+h1,
+h2 {
+    text-align: center;
+}
+
+header {
+    width: 100%;
     background-image: url(analytics-ge854c85eb_1920.jpg);
     background-repeat: no-repeat;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
 }
 
-
-@media (max-width: 576px) {   
-
-header{
-background-position-x: center;
-height: 300px;
-}
-
-.navHeader{
-    background-color: black;
-    height: 50px;
-}
-
-h1, h2{
-    text-align: center;
-}
-
-.meuResumo{
-    text-align: justify;
-}
-
-main{
-margin-top: 260px;
-}
-
-.imgproject{
-    width: 100%;
-    border-radius: 5%;
-}
-
 section{
-    color: rgba(201, 201, 201, 0);
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, 
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     border-radius: 5%;
-    height: 100%;
     margin-bottom: 10%;
+
 }
 
-.pSection{
-    text-align: justify;
-    margin-left: 5%;
-    width: 90%;
-}
-
-/* esta classe faz com que sections com menos texto fiquem do tamanho correto */
-.comprimentoSections{
-    height: 100%;
-}
-
-.comprimentoSection2{
-    height: 100%;
+.imgproject {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    border-radius: 5%;
 }
 
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
+
+/* versão mobile */
+@media (max-width: 576px) {
+
+    header {
+        background-position-x: center;
+        height: 300px;
+    }
+
+    .navHeader {
+        background-color: black;
+        height: 50px;
+    }
+
+   
+
+    .meuResumo {
+        text-align: justify;
+    }
+
+    main {
+        margin-top: 260px;
+    }
+
+
+    .pSection {
+        text-align: justify;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+
+    .sctnContatos{
+        height: 150px;
+    }
+
+    .iconContatos{
+        float: left;
+        font-size: 1cm;
+        margin-top: 50px;
+        margin-left:15%;
+    }
+
+    .h2Contatos{
+        float: right;
+        margin-right: 40%;
+        margin-top: 35px;
+    }
+
+    .pContatos{
+        float: right;
+        margin-top: 5px;
+        margin-right: 37%;
+    }
+
+
+    .iconEmail{
+        float: left;
+        font-size: 1cm;
+        margin-top: 45px;
+        margin-left:7%;
+    }
+
+    .pEmail{
+        float: right;
+        margin-top: 5px;
+        margin-right: 20%;    
+    }
+
+
+
+    footer {
+        clear: both;
+        background-color: black;
+        color: white;
+        height: 120px;
+    }
+
+    .pFooter {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.45cm;
+    }
+
+    .navFooter{
+        float: left;
+        margin-left: 35%;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .aFooter{
+    font-size: 0.6cm;
+    
+    }
+
+    small{
+        text-align: center;
+        float: left;
+        width: 100%;
+    }
+
 }
 
-.pFooter{
-    text-align: center;
-    font-size: medium;
-}
+/* fim parte Mobile */
+
+
+
+/* transição de mobile para tablete */
+@media (min-width: 576px) {
+
+    header {
+        background-position-x: center;
+        height: 350px;
+    }
+
+    .navHeader {
+        background-color: black;
+        height: 50px;
+    }
+
+    .meuResumo {
+        text-align: justify;
+        font-size: 0.6cm;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    main {
+        margin-top: 310px;
+    }
+
+
+
+    section {
+        
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .pSection {
+        text-align: justify;
+        margin-left: 5%;
+        width: 90%;
+        margin-bottom: 50px;
+        font-size: 0.6cm;
+    }
+
+    .sctnContatos{
+        height: 150px;
+    }
+
+    .iconContatos{
+        float: left;
+        font-size: 1.3cm;
+        margin-top: 50px;
+        margin-left:25%;
+    }
+
+    .h2Contatos{
+        float: right;
+        margin-right: 40%;
+        margin-top: 35px;
+    }
+
+    .pContatos{
+        float: right;
+        margin-top: 5px;
+        margin-right: 37%;
+        font-size: 0.6cm;
+    }
+
+
+    .iconEmail{
+        float: left;
+        font-size: 1.3cm;
+        margin-top: 45px;
+        margin-left:20%;
+    }
+
+    .pEmail{
+        float: right;
+        font-size: 0.6cm;
+        margin-top: 5px;
+        margin-right: 30%;    
+    }
+
+
+    footer {
+        clear: both;
+        background-color: black;
+        color: white;
+        height: 150px;
+    }
+
+    .pFooter {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.5cm;
+    }
+
+    .navFooter{
+        float: left;
+        margin-left: 35%;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .aFooter{
+    font-size: 0.8cm;
+    
+    }
+
+    small{
+        font-size: medium;
+        text-align: center;
+        float: left;
+        width: 100%;
+    }
 
 
 }
+
+/* fim da transição mobile para tablet */
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
