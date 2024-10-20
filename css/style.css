@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .aprensentacao{
     text-decoration:underline;
 }
@@ -5,7 +9,6 @@
 body{
     text-align: justify;
 }
-
 
 
 .topo{
@@ -40,14 +43,29 @@ text-indent: 2em;
     color: black;
 }
 
-a{
+.aprojeto{
     color: black;
     
 }
 
-a:hover{
+.aprojeto:hover{
     color: #808080;
     text-decoration: none;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .icon{
+        margin-left: 0%;
+        }
+        p, a{
+            font-size: large;
+        }
+
+        small{
+            font-size: medium;
+        }
 }
 
 
@@ -56,10 +74,18 @@ a:hover{
     .aprensentacao{
         font-size: 35px;
     }
+
+    .icon{
+        margin-left: 0%;
+        }
   }
   
   /* Large devices (desktops, 992px and up) - Allysson*/
   @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .icon{
+        margin-left: 0%;
+        }
     
   } 
   
@@ -72,7 +98,28 @@ a:hover{
     article, aside, p, div{
         font-size: x-large;
     }
+
+    .icon{
+        margin-left: 0%;
+        }
+
   }
 
+
+  .bgFooter{
+    background-color:#050204;
+    color: #cecece;
+    text-align: center;
+}
+
+.afooter{
+    color: #fff;
+    text-decoration: none;
+}
+
+.afooter:hover{
+    color: #cecece;
+    text-decoration: none;
+}
 
 
