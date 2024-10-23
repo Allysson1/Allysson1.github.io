@@ -53,12 +53,16 @@ text-indent: 2em;
     text-decoration: none;
 }
 
+@media (max-width: 576px){
+        img{
+            width: 2cm;
+        }
+}
+
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .icon{
-        margin-left: 0%;
-        }
+
         p, a{
             font-size: large;
         }
@@ -74,19 +78,11 @@ text-indent: 2em;
     .aprensentacao{
         font-size: 35px;
     }
-
-    .icon{
-        margin-left: 0%;
-        }
   }
   
   /* Large devices (desktops, 992px and up) - Allysson*/
   @media (min-width: 992px) and (max-width: 1199.98px) {
-
-    .icon{
-        margin-left: 0%;
-        }
-    
+   
   } 
   
   /* Extra large devices (large desktops, 1200px and up) - Allysson*/
@@ -98,10 +94,6 @@ text-indent: 2em;
     article, aside, p, div{
         font-size: x-large;
     }
-
-    .icon{
-        margin-left: 0%;
-        }
 
   }
 
