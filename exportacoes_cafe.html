@@ -27,16 +27,11 @@
                 <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#Habilidades">Experiências<span class="sr-only">(página atual)</span></a>
-                    </li>
-                    <li class="nav-item">
                       <a class="nav-link" href="https://github.com/Allysson1" target="_blank">GitHub</a>
                     </li>
                     <li>
                         <a class="nav-link" href="https://www.linkedin.com/in/%C3%A1llysson-ernandes-6912451a5/" target="_blank">LinkedIn</a>
                     </li>
-            
-
                     
                       <a class="nav-link" href="index.html">
                         Home
@@ -87,14 +82,45 @@
                   </a>
                   <br>
                   <p class="mt-3">Imagem do arquivo .csv com os dados brutos:</p>
-                  <img class="img-fluid border" src="/images/dados brutos.png" alt="representação dos dados em tabela no excel, serapados por colunas e linhas">
+                  <img class="img-fluid border" src="/images/dados brutos.png" alt="representação dos dados de exportações em uma tabela no excel, serapados por colunas e linhas">
 
-                  <p class="mt-5">Imagem com os dados referentes aos códigos dos paíes presentes no arquivo principal:</p>
+                  <p class="mt-5">Imagem com os dados referentes aos códigos dos países presentes no arquivo principal:</p>
 
-                  <img class="img-fluid border" src="/images/codigo paises.png" alt="representação dos dados em tabela no excel, serapados por colunas e linhas">
+                  <img class="img-fluid border" src="/images/codigo paises.png" alt="representação dos códigos dos países em tabela no excel, serapados por colunas e linhas">
                 
+                  <p class="mt-5">Dados preparados para análise. Agora, os dados dos países estam presentes no arquivo principal, com cada país no seu código específico.</p>
                   
+                  <img class="img-fluid border" src="/images/dados finais.png" alt="representação dos dados finais em tabela no excel, serapados por colunas e linhas">
 
+                  <p class="mt-5">  Agora que vimos de onde tudo veio, vamos começar a codar:
+                    <br>
+                    Antes de tudo, faço a importação do arquivo para o sql server.
+                    <br>
+                    Serão cinco tabelas para a construção de um star schema.
+                    <br> 
+                    A primeira será a dimensão de tempo:
+                  </p>
+
+                  <code>
+                    Create Table DimTempo<br>
+                    (CodigoTempo Int Identity(1,1) Not Null,<br>
+                    CodigoExportacao int not null,<br>
+                    Mes TinyInt Not Null,<br>
+                    MesPorExtenso Varchar(15) Not Null,<br>
+                    Quartil TinyInt Not Null,<br>
+                    QuartilPorExtenso Varchar(20) Not Null,<br>
+                    Ano Int Not Null,<br>
+                    AnoPorExtenso Varchar(40) Not Null<br>
+                    Constraint [PK_DimTime_TimeID] Primary Key Clustered (CodigoTempo))<br>
+                    Go<br>
+                  </code>
+
+                  <p>
+                    Usando <code>Constraint</code>, consigo criar uma chave primaria com o nome mais específico a coluna que quero utilizar como identificador único.
+                    <br>
+                    Próxima tabela: Dimensão de 
+                  </p>
+                  
 
 
  
